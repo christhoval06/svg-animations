@@ -1,0 +1,135 @@
+#customer-logos {
+  a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px
+  }
+  .common-Button {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 5px) scale(.95);
+    opacity: 0;
+    transition: .7s cubic-bezier(.19, 1, .22, 1)
+  }
+  ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    li {
+      margin: 10px
+    }
+
+  }
+
+  img {
+    height: 20px;
+    vertical-align: middle
+  }
+
+  [src$="kickstarter.svg"] {
+    height: 16px
+  }
+
+  [src$="instacart.svg"], [src$="slack.svg"] {
+    height: 22px
+  }
+
+  [src$="lyft.svg"] {
+    position: relative;
+    top: 2px;
+    height: 24px
+  }
+
+  [src$="shopify.svg"] {
+    position: relative;
+    bottom: 1px;
+    height: 24px
+  }
+
+  [src$="opentable.svg"], [src$="pinterest.svg"] {
+    height: 24px
+  }
+
+  [src$="deliveroo.svg"] {
+    height: 40px
+  }
+
+  [src$="drivy.svg"] {
+    height: 24px
+  }
+
+  [src$="heetch.svg"] {
+    height: 26px
+  }
+
+  [src$="elcorteingles.svg"] {
+    height: 45px
+  }
+
+  [src$="chope.png"] {
+    height: 40px
+  }
+
+  [src$="hipvan.png"] {
+    height: 30px
+  }
+
+  [src$="croove.svg"] {
+    height: 26px
+  }
+
+  [src$="sistrix.svg"] {
+    height: 28px
+  }
+
+  [src$="book-a-tiger.svg"] {
+    height: 26px
+  }
+
+  [src$="smarthr.svg"] {
+    height: 18px
+  }
+
+  [src$="freee.png"] {
+    height: 30px
+  }
+}
+
+@media (min-width: 880px) {
+  #customer-logos {
+    a {
+      padding-top: 70px;
+      padding-bottom: 65px
+    }
+
+    ul {
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      transition: 1s cubic-bezier(.19, 1, .22, 1);
+      will-change: transform;
+      filter: blur(0)
+    }
+
+    a:focus .common-Button, a:hover .common-Button {
+      opacity: 1;
+      transform: translate(-50%, -7px)
+    }
+
+    a:focus ul, a:hover ul {
+      opacity: .7;
+      transform: scale(.95);
+      filter: blur(10px)
+    }
+
+    li {
+      margin: 0
+    }
+  }
+}
+

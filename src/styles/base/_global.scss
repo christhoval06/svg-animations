@@ -1,0 +1,46 @@
+/* ==================================================
+   Global Styles
+================================================== */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #999;
+    background: #FFF;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+}
+
+::selection {
+    background: #149077;
+    color: #FFF;
+}
+
+::-moz-selection {
+    background: #149077;
+    color: #FFF;
+}
+
+a {
+    color: #16A085;
+    text-decoration: none;
+    &:hover {
+        color: #444;
+    }
+}

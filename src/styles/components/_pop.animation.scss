@@ -1,0 +1,12 @@
+.pop-animation {
+  position: relative;
+  height: 66px;
+  margin-bottom: -66px;
+  svg, img, div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -12px;
+    will-change: transform, opacity
+  }
+}

@@ -1,0 +1,52 @@
+.coin-flip {
+  width: 20px;
+  height: 20px;
+  // left: 0;
+  // right: 0;
+  // margin: auto;
+  transform-style: preserve-3d;
+  // position: absolute;
+  // animation: fly 2s ease-in-out 0s infinite alternate;
+
+  &.fliped {
+    .heads, .tails {
+      backface-visibility: hidden;
+      position: absolute;
+      // top: 0;
+      // left: 0;
+    }
+    .heads {
+      animation: flip-head 1s linear 0s infinite alternate;
+    }
+    .tails {
+      animation: flip-tail 1s linear 0s infinite alternate;
+    }
+  }
+}
+
+@keyframes fly {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes flip-head {
+  0%, 100% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes flip-tail {
+  0%, 100% {
+    transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+}
