@@ -11,7 +11,7 @@ class App extends Component {
 			<main>
 				<HomeSection logo={null}/>
 				<ArrowSeparatorElement/>
-				<CountDownSection date={'21 october 2018 14:00:00'}/>
+				<CountDownSection date={'1 july 2019 12:00:00'}/>
 				<ArrowSeparatorElement className={'theme'}/>
 				<CustomersSection/>
 				{/* <StripeSection/> */}

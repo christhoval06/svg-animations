@@ -9,7 +9,7 @@ const HomeSection = ({logo, ...props}) => (
 
 			{/* <AnimationElement/> */}
 			<p style={{position: 'relative'}}>{logo}</p>
-			<h1><span>Pokemon Comunity Day</span><br/>is coming soon</h1>
+			<h1><span>Dion's BDay</span><br/>is coming soon</h1>
 			<p>It's almost ready ... honest</p>
 		</div>
 	</div>
